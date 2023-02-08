@@ -19,39 +19,53 @@ export default function Navbar({}) {
               </div>
               <div className="flex flex-1 justify-start ml-10 items-center">
                 <div className="flex flex-shrink-0 items-left">
-                  <a href="#" className="flex items-center justify-center">
+                  <button
+                    onClick={() => {
+                      document.getElementById("home")?.scrollIntoView();
+                    }}
+                    className="flex items-center justify-center"
+                  >
                     <img
                       className="block bg-red h-[40px] w-[110px] lg:hidden"
                       src="../images/Logo.png"
                       alt="GPS Plus"
                     />
-                  </a>
-                  <a href="#" className="flex items-center justify-center">
+                  </button>
+                  <button
+                    onClick={() => {
+                      document.getElementById("home")?.scrollIntoView();
+                    }}
+                    className="flex items-center justify-center"
+                  >
                     <img
                       className="hidden  h-[60px] w-[220px] lg:block"
                       src="../images/Logo.png"
                       alt="GPS Plus"
                     />
-                  </a>
+                  </button>
                 </div>
                 <div className="hidden sm:block ">
                   <div className="flex flex-row space-x-4 align-center justify-center">
-                    <a
+                    <button
                       className={
                         "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
                       }
-                      href="#home"
-                    >
-                      Home
-                    </a>
-                    <a
-                      className={
-                        "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
-                      }
-                      href="#about"
+                      onClick={() => {
+                        document.getElementById("about")?.scrollIntoView();
+                      }}
                     >
                       About
-                    </a>
+                    </button>
+                    <button
+                      className={
+                        "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
+                      }
+                      onClick={() => {
+                        document.getElementById("services")?.scrollIntoView();
+                      }}
+                    >
+                      Services
+                    </button>
                   </div>
                 </div>
               </div>
@@ -67,22 +81,26 @@ export default function Navbar({}) {
           </div>
           <Disclosure.Panel className="sm:hidden">
             <div className="flex flex-col items-center mt-2">
-              <a
+              <button
                 className={
                   "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
                 }
-                href="#home"
-              >
-                Home
-              </a>
-              <a
-                className={
-                  "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
-                }
-                href="#about"
+                onClick={() => {
+                  document.getElementById("about")?.scrollIntoView();
+                }}
               >
                 About
-              </a>
+              </button>
+              <button
+                className={
+                  "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
+                }
+                onClick={() => {
+                  document.getElementById("services")?.scrollIntoView();
+                }}
+              >
+                Services
+              </button>
             </div>
           </Disclosure.Panel>
         </div>

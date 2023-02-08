@@ -72,7 +72,11 @@ export default function Header() {
           </motion.div>
         </div>
       </div>
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 0.2 }}
         className="mb-4 p-4 sm:p-0 w-3/4 md:w-1/2
        bg-[#f7f7f7] flex flex-row flex-wrap justify-center items-start rounded-2xl shadow-lg"
       >
@@ -111,7 +115,7 @@ export default function Header() {
             </div>
           </motion.div>
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }
