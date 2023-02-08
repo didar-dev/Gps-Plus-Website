@@ -46,7 +46,7 @@ export default function Navbar({}) {
                   </button>
                 </div>
                 <div className="hidden sm:block ">
-                  <div className="flex flex-row space-x-4 align-center justify-center">
+                  <div className="flex flex-row space-x-2 align-center justify-center">
                     <button
                       className={
                         "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
