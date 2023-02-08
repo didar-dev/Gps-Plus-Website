@@ -1,10 +1,11 @@
 "use client";
 import { Disclosure } from "@headlessui/react";
 import React from "react";
-
 import { HiMenu } from "react-icons/hi";
 import { MdContactSupport } from "react-icons/md";
+import { useRouter } from "next/navigation";
 export default function Navbar({}) {
+  const router = useRouter();
   return (
     <Disclosure as="nav" className="bg-white ">
       {(open) => (
@@ -21,7 +22,7 @@ export default function Navbar({}) {
                 <div className="flex flex-shrink-0 items-left">
                   <button
                     onClick={() => {
-                      document.getElementById("home")?.scrollIntoView();
+                      router.push("/");
                     }}
                     className="flex items-center justify-center"
                   >
@@ -33,7 +34,7 @@ export default function Navbar({}) {
                   </button>
                   <button
                     onClick={() => {
-                      document.getElementById("home")?.scrollIntoView();
+                      router.push("/");
                     }}
                     className="flex items-center justify-center"
                   >
@@ -51,7 +52,9 @@ export default function Navbar({}) {
                         "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
                       }
                       onClick={() => {
-                        document.getElementById("about")?.scrollIntoView();
+                        document
+                          .getElementById("about")
+                          ?.scrollIntoView({ behavior: "smooth" });
                       }}
                     >
                       About
@@ -61,7 +64,9 @@ export default function Navbar({}) {
                         "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
                       }
                       onClick={() => {
-                        document.getElementById("services")?.scrollIntoView();
+                        document
+                          .getElementById("services")
+                          ?.scrollIntoView({ behavior: "smooth" });
                       }}
                     >
                       Services
@@ -86,7 +91,9 @@ export default function Navbar({}) {
                   "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
                 }
                 onClick={() => {
-                  document.getElementById("about")?.scrollIntoView();
+                  document
+                    .getElementById("about")
+                    ?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
                 About
@@ -96,7 +103,9 @@ export default function Navbar({}) {
                   "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
                 }
                 onClick={() => {
-                  document.getElementById("services")?.scrollIntoView();
+                  document
+                    .getElementById("services")
+                    ?.scrollIntoView({ behavior: "smooth" });
                 }}
               >
                 Services
