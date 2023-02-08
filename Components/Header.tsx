@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Component } from "react";
 import { motion } from "framer-motion";
 
 const BESTSERVICES = [
@@ -36,7 +36,7 @@ export default function Header() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             whileDrag={{ scale: 1.1 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.3 }}
             className="text-5xl mb-5 font-black text-[#0470b8] p-4 sm:p-0"
           >
             GpsPlus
@@ -45,7 +45,7 @@ export default function Header() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.3 }}
             className="text-2xl p-4 sm:p-0 text-gray-400"
           >
             GpsPlus is a branch of PolyJob company with in the fields of fleet
@@ -58,7 +58,7 @@ export default function Header() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.3 }}
           >
             <motion.img
               initial={{ y: 100 }}

@@ -67,27 +67,22 @@ export default function Navbar({}) {
           </div>
           <Disclosure.Panel className="sm:hidden">
             <div className="flex flex-col items-center mt-2">
-              {/* <Link
-                to="/"
-                key="Home"
+              <a
                 className={
-                  "text-gray-300 w-full hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium text-center "
+                  "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
                 }
+                href="#home"
               >
                 Home
-              </Link>
-              <Link
-                onClick={() => {
-                  Disclosure.Panel.close();
-                }}
-                to="/About"
-                key="About"
+              </a>
+              <a
                 className={
-                  "text-gray-300 w-full hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium text-center "
+                  "text-black text-decoration-none  px-3 py-2 rounded-md text-md"
                 }
+                href="#about"
               >
                 About
-              </Link> */}
+              </a>
             </div>
           </Disclosure.Panel>
         </div>
