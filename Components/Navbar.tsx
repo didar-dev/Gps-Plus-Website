@@ -78,7 +78,13 @@ export default function Navbar({}) {
                 <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                   <button className="bg-[#24a6e4] text-white font-black gap-1 py-2 px-4 rounded-full transition duration-500 ease-in-out transform shadow-lg flex flex-row items-center hover:bg-[#24a6e4] ">
                     <MdContactSupport className="text-white text-2xl" />
-                    <a href="#contact">Contact Us</a>
+                    <a
+                      onClick={() => {
+                        router.push("/Contact");
+                      }}
+                    >
+                      Contact Us
+                    </a>
                   </button>
                 </div>
               </div>

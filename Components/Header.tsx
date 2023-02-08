@@ -61,8 +61,8 @@ export default function Header() {
             transition={{ delay: 0.3 }}
           >
             <motion.img
-              initial={{ y: 100 }}
-              animate={{ y: 0 }}
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ type: "spring", stiffness: 120 }}
               className=" h-3/4 w-full object-contain"
@@ -91,25 +91,20 @@ export default function Header() {
           >
             <motion.div className="p-2">
               <motion.img
-                initial={{ rotate: 360 }}
-                whileInView={{ rotate: 0 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ type: "spring", stiffness: 120 }}
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.1 }}
                 className="sm:w-20 sm:h-20 w-14 h-14 object-contain m-2"
                 src={service.image}
                 alt={service.title}
               />
             </motion.div>
-
             <div className="flex flex-col justify-center items-center max-w-[250px]">
               <h1 className="sm:text-2xl text-xl font-bold text-[#0470b8] text-center">
                 {service.title}
               </h1>
-              <p
-                className="sm:text-lg text-sm text-gray-400 text-center
-              "
-              >
+              <p className="sm:text-lg text-sm text-gray-400 text-center">
                 {service.description}
               </p>
             </div>

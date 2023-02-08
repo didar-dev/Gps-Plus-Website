@@ -15,7 +15,7 @@ export default function About() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             whileDrag={{ scale: 1.1 }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.3 }}
             className="text-xl my-2  text-[#0470b8] px-4 sm:p-0"
           >
             ABOUT US
@@ -24,7 +24,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.3 }}
             className="sm:text-5xl text-3xl font-black
              text-[#050505] px-4 sm:p-0"
           >
@@ -34,7 +34,7 @@ export default function About() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.5 }}
+            transition={{ delay: 0.3 }}
             className="text-gray-500 m-2 sm:p-0"
           >
             GPS+ is a technological company branch of Polyjob in the field of
@@ -49,9 +49,10 @@ export default function About() {
         </div>
         <div className="w-full sm:w-full flex flex-col items-center mt-4 sm:mt-0 justify-center relative h-96">
           <motion.img
-            animate={{ x: [0, 20, -20, 20, -20, 20, 0] }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 22, repeat: Infinity }}
+            transition={{ delay: 0.3 }}
             className="sm:h-[370px] sm:w-[370px] h-[240px] w-[240px] rounded-xl shadow-2xl  top-0 right-0"
             src="https://gpsplus.tech/assets/upload/images/image_1635945079_4108.jpg"
             alt="Image 1"
