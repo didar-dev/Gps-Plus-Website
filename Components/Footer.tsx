@@ -53,7 +53,7 @@ export default function Footer() {
                 onClick={() => {
                   window.scrollTo(0, 0);
                 }}
-                className="text-md text-white hover:text-[#f7f7f7] m-2 hover:cursor-pointer  "
+                className="text-md text-white hover:text-[#f7f7f7] my-2 hover:cursor-pointer  "
               >
                 Home
               </motion.li>
@@ -61,7 +61,7 @@ export default function Footer() {
                 onClick={() => {
                   document.getElementById("about")?.scrollIntoView();
                 }}
-                className="text-md text-white hover:text-[#f7f7f7] m-2 hover:cursor-pointer  "
+                className="text-md text-white hover:text-[#f7f7f7] my-2 hover:cursor-pointer  "
               >
                 About Us
               </motion.li>
@@ -69,7 +69,7 @@ export default function Footer() {
                 onClick={() => {
                   router.push("/Contact");
                 }}
-                className="text-md text-white hover:text-[#f7f7f7] m-2 hover:cursor-pointer  "
+                className="text-md text-white hover:text-[#f7f7f7] my-2 hover:cursor-pointer  "
               >
                 Contact Us
               </motion.li>
@@ -98,7 +98,7 @@ export default function Footer() {
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 }}
-                  className="text-md text-white hover:text-[#f7f7f7] m-2 hover:cursor-pointer  "
+                  className="text-md text-white hover:text-[#f7f7f7] my-2 hover:cursor-pointer  "
                   onClick={() => {
                     document.getElementById("services")?.scrollIntoView();
                   }}
